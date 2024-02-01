@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript - Introduction : Exercices</title>
+    </head>
+    <body style="padding: 20px;">
+        <script>
+            // Vous rédigerez le code nécessaire à la résolution de chaque exercice (bien lire les consignes).
+            // Les mots entre chevrons (ex : <name>) correspondront à la valeur des variables associées.
+            // Pour plus de lisibilité, vous commenterez le code des exercices précédents en passant à un nouvel exercice.
+            // Le projet sera à rendre via un nouveau dépôt disponible sur votre profil GitHub.
+
+            // == Exercice 1.1 ==
+            // Déclarez une variable : "nb" dont vous définirez librement la valeur.
+            // Vous afficherez le double de la valeur de "nb".
+            // let nb = 2; 
+            // console.log ("Double the value of nb:", nb * 2);
+
+
+            // == Exercice 1.2 ==
+            // Déclarez une variable : "nb" dont vous définirez librement la valeur.
+            // Vous afficherez le carré de la valeur de "nb".
+            // let nbm = 6;
+            // let squareofnb = nbm * nbm; 
+            // console.log("Square of nb1", + squareofnb );
+              
+            // == Exercice 1.3 ==
+            // Déclarez trois variables : "name", "age" et "city" dont vous définirez librement les valeurs.
+            // Vous afficherez "Je m'appelle <name>, j'ai <age> ans et j'habite à <city>.".
+
+
+            // == Exercice 1.3 ==
+            // Déclarez autant de variables que nécessaire. Vous définirez les valeurs de chaque variable afin que 
+            // chaque type primitif soit représenté (hormis le type Symbol).
+            // Indice : il existe 6 types primitifs (sans compter le type Symbol).
+            // Vous afficherez chaque variable ainsi que son type.
+            // let name = "sajida";
+            // const age =  38;
+            // let city = "clermont ferrand";
+            // let information = "my name is " + name + ", i am " + age + " years old, and i live in " + city + ".";
+            // console.log(information);
+
+
+            // == Exercice 2 ==
+            // La valeur de la variable "age" de l'Exercice 1 doit maintenant être de type 'number' et être calculée.
+            // Les valeurs des variables "name" et "city" peuvent être définies librement.
+            // Vous afficherez "Je m'appelle <name>, j'ai <age> ans et j'habite à <city>.".
+               
+       // let name1 = prompt("Enter your name:");
+       // let age1 = prompt("Enter your age:");
+        // let city1 = prompt("Enter your city:");
+
+        // let information1 = " user name " + name1 + ", user age "+ age1 + ",user city" + city1 + ".";
+        // console.log(information1);
+
+            // == Exercice 3 ==
+            // Déclarez trois variables : "name", "age" et "city" dont les valeurs seront définies par l'Utilisateur.
+            // Vous afficherez "Je m'appelle <name>, j'ai <age> ans et j'habite à <city>.".
+
+
+            // == Exercice 4 ==
+            // Déclarez deux variables : "nb1" et "nb2" dont les valeurs seront définies par l'Utilisateur.
+            // Vous afficherez la somme, la différence ainsi que le produit des valeurs des variables "nb1" et "nb2".
+            
+            let nb1 = parseFloat(prompt("Enter the first number:"));
+            let nb2 = parseFloat(prompt("Enter the second number:"));
+
+            if (isNaN(nb1) || isNaN(nb2)) {
+            console.log("Invalid input. Please enter numeric values.");
+            } 
+
+            else {
+    
+           //  let sum = nb1 + nb2;
+            // let difference = nb1 - nb2;
+            // let product = nb1 * nb2;
+
+            console.log("Sum: " + sum);
+            console.log("Difference: " + difference);
+            console.log("Product: " + product);
+}
+
+            // == Exercice 5 ==
+            // Indiquez le résultat des opérations suivantes ansi que son type :
+            // Par exemple : 1 + 1 = 2 (number)
+            //
+            // "" + 1 + 0    = 
+            // "" - 1 + 0    = 
+            // true + false  = 
+            // 6 / "3"       = 
+            // "2" * "3"     = 
+            // 4 + 5 + "px"  = 
+            // "$" + 4 + 5   = 
+            // "4" - 2       = 
+            // "4px" - 2     = 
+            // "  -9  " + 5  = 
+            // "  -9  " - 5  = 
+            // null + 1      = 
+            // undefined + 1 = 
+            // " \t \n" - 2  = 
+
+     function showResultAndType(operation, result) {
+    console.log(`${operation} = ${result} (${typeof result})`);
+}
+
+// Operations
+showResultAndType('"" + 1 + 0', "" + 1 + 0);
+showResultAndType('"" - 1 + 0', "" - 1 + 0);
+showResultAndType('true + false', true + false);
+showResultAndType('6 / "3"', 6 / "3");
+showResultAndType('"2" * "3"', "2" * "3");
+showResultAndType('4 + 5 + "px"', 4 + 5 + "px");
+showResultAndType('"$" + 4 + 5', "$" + 4 + 5);
+showResultAndType('"4" - 2', "4" - 2);
+showResultAndType('"4px" - 2', "4px" - 2);
+showResultAndType('"-9" + 5', "-9" + 5);
+showResultAndType('"-9" - 5', "-9" - 5);
+showResultAndType('null + 1', null + 1);
+showResultAndType('undefined + 1', undefined + 1);
+showResultAndType('"\t\n" - 2', "\t\n" - 2);
+        </script>
+    </body>
+</html>
